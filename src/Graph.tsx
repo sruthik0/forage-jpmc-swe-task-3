@@ -39,7 +39,7 @@ class Graph extends Component<IProps, {}> {
       // Load the `table` in the `<perspective-viewer>` DOM reference.
       elem. load (this.table);
       elem. setAttribute('view', 'y_line');
-      elem. setAttribute(' row-pivots','["timestamp" ]');
+      elem. setAttribute('row-pivots','["timestamp"]');
       elem.setAttribute('columns', '["ratio","lower bound", "upper_bound","trigger alert"]');
       elem. setAttribute( 'aggregates', JSON.stringify ({
       price_abc: 'avg', price_def: 'avg' , ratio: 'avg', timestamp:'distinct count',
